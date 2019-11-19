@@ -1,0 +1,85 @@
+@charset "utf-8";
+html, body{
+    font-size:12px;
+    width: 100%;
+    height: 100%;
+}                   /*全局控制*/
+body,form,input,h1,p{padding:0; margin:0; border:0; }          /*重置浏览器的默认样式*/
+form{
+    width:100%;
+    height:100%;
+    display: block;
+}
+form div{
+    width: 50%;
+    height: 50%;
+    float: left;
+    border: 8px solid yellow;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 100px 0;
+    padding-left: 13%;
+}
+form div:nth-child(1){
+    background-image: url("images/0001.jpg");
+
+    color: red;
+}
+form div:nth-child(2){
+    background-image: url("images/0002.jpg");
+    color: blue;
+}
+form div:nth-child(3){
+    background-image: url("images/0003.jpg");
+    color: aqua;
+}
+form div:nth-child(4){
+    background-image: url("images/0004.jpg");
+    color: brown;
+}
+p{
+    display: block;
+    height: 25%;
+}
+form div:last-of-type p{
+     height: 33%;
+ }
+p span{
+    width:75px;
+    display:inline-block;                /*将行内元素转换为行内块元素*/
+    text-align:right;
+    padding-right:10px;
+}
+.ly{
+    position: relative;
+    top: -65px;
+}
+p input{
+    width:200px;
+    height:18px;
+    border:1px solid #d4cdba;
+    padding:2px;                           /*设置输入框与输入内容之间拉开一些距离*/
+}
+.pic{
+    height: 24px;
+}
+textarea{
+    width: 230px;
+    height: 80px;
+    resize:none;
+}
+.lucky input{
+    width:100px;
+    height:24px;
+    margin-top: 30px;
+}
+.btn input{                                /*设置两个按钮的宽高、边距及边框样式*/
+    width:100px;
+    height:30px;
+    background:#93b518;
+    margin-top:60px;
+    margin-left:75px;
+    border-radius:3px;                      /*设置圆角边框*/
+    font-size:18px;
+    color:#fff;
+}
